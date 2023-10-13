@@ -150,7 +150,7 @@ _set_default_values() {
 	# Provide a git username and repo in this format - username/repo
 	# In this repo the structure needs to be like this /patches/libtorrent/1.2.11/patch and/or /patches/qbittorrent/4.3.1/patch
 	# your patch file will be automatically fetched and loaded for those matching tags.
-	qbt_patches_url="${qbt_patches_url:-userdocs/qbittorrent-nox-static}"
+	qbt_patches_url="${qbt_patches_url:-DDSDerek/qbittorrent-nox-static}"
 
 	# Default to this version of libtorrent is no tag or branch is specified. qbt_libtorrent_version=1.2 or -lt v1.2.18
 	qbt_libtorrent_version="${qbt_libtorrent_version:-2.0}"
@@ -163,7 +163,7 @@ _set_default_values() {
 	qbt_optimise_strip="${qbt_optimise_strip:-yes}"
 
 	# Github actions specific - Build revisions - The workflow will set this dynamically so that the urls are not hardcoded to a single repo
-	qbt_revision_url="${qbt_revision_url:-userdocs/qbittorrent-nox-static}"
+	qbt_revision_url="${qbt_revision_url:-DDSDerek/qbittorrent-nox-static}"
 
 	# Provide a path to check for cached local git repos and use those instead. Priority over workflow files.
 	qbt_cache_dir="${qbt_cache_dir%/}"
